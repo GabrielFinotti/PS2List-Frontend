@@ -14,6 +14,7 @@ A branch **PS2List-backend** foi criada exclusivamente para o deploy da API no s
 
 - **Frontend:**
   - Angular
+  - SCSS (Sass)
   
 - **Backend:**
   - PHP
