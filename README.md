@@ -34,7 +34,7 @@ A branch PS2List-backend foi criada exclusivamente para o deploy da API no servi
 
 ## Aviso sobre Funcionalidades Não Operacionais
 
-Gostaríamos de informar aos usuários que, atualmente, as opções de salvar credenciais e recuperar save não estão funcionais. Essa limitação ocorre devido ao reaproveitamento do modelo como ja informado neste documento.
+Gostaría de informar aos usuários que as opções de salvar credenciais e recuperar save não são funcionais. Isto ocorre devido ao reaproveitamento do modelo como ja informado neste documento.
 
 ## Licença
 
