@@ -38,4 +38,4 @@ Gostaría de informar aos usuários que as opções de salvar credenciais e recu
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT.
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
