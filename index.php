@@ -1,9 +1,9 @@
 <?php
-$hostname = 'roundhouse.proxy.rlwy.net';
+$hostname = 'viaduct.proxy.rlwy.net';
 $database = 'railway';
 $username = 'root';
-$password = 'bba-gb1A442-h5a23aGAeg3eg24-E21B';
-$port = 50074;
+$password = '4e3gbafcHFbgeF2gDC1bcB5hCE6EGGeA';
+$port = 24441;
 
 $mysqli = new mysqli($hostname, $username, $password, $database, $port);
 if ($mysqli->connect_errno) {
