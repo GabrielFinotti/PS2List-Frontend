@@ -24,7 +24,3 @@ Este projeto consiste em um sistema dedicado ao cadastro e listagem de usuários
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
-
-## Contato
-
-Para dúvidas ou sugestões, entre em contato via [insira seu e-mail aqui].
