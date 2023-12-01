@@ -8,7 +8,7 @@ Este projeto consiste em um sistema dedicado ao cadastro e listagem de usuários
 
 ### Branch UserList-backend
 
-A branch **UserList-backend** foi criada exclusivamente para o deploy da API no servidor. Ela contém as configurações necessárias para garantir o correto funcionamento da aplicação, permitindo a comunicação eficiente entre o frontend e o backend no ambiente de produção.
+A branch **PS2List-backend** foi criada exclusivamente para o deploy da API no servidor. Ela contém as configurações necessárias para garantir o correto funcionamento da aplicação, permitindo a comunicação eficiente entre o frontend e o backend no ambiente de produção.
 
 ## Tecnologias Utilizadas
 
