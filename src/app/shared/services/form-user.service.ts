@@ -12,7 +12,7 @@ export class FormUserService {
 
   constructor(private http: HttpClient) {
     // Setando a url da api.
-    this.url = 'https://ps2blog-api.up.railway.app/api/usr';
+    this.url = 'api-ps2list.up.railway.app/api/usr';
   }
 
   // Buscar Usuário
