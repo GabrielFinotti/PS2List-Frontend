@@ -1,0 +1,72 @@
+<form [formGroup]="cadastro" (ngSubmit)="setUser()">
+  <div>
+    <!--
+      Utilizando o ngClass nos inputs para setar a classe de erro quando estabelecida a condição!
+     -->
+    <input
+      [ngClass]="{
+        erro: cadastro.get('user')?.invalid && cadastro.get('user')?.dirty
+      }"
+      type="text"
+      placeholder="Usuário"
+      formControlName="user"
+    />
+    <!--
+      @If renderiza o texto de erro quando estabelecida a condição para cada input!
+     -->
+    @if (cadastro.get('user')?.invalid && cadastro.get('user')?.dirty) {
+    <p class="erro-text">Insira um nome de usuário válido!</p>
+    }
+  </div>
+  <div>
+    <input
+      [ngClass]="{
+        erro: cadastro.get('email')?.invalid && cadastro.get('email')?.dirty
+      }"
+      type="email"
+      placeholder="Email"
+      formControlName="email"
+    />
+    @if (cadastro.get('email')?.invalid && cadastro.get('email')?.dirty) {
+    <p class="erro-text">Insira um email válido!</p>
+    }
+  </div>
+  <div>
+    <input
+      [ngClass]="{
+        erro:
+          cadastro.get('password')?.invalid && cadastro.get('password')?.dirty
+      }"
+      type="password"
+      placeholder="Senha"
+      formControlName="password"
+    />
+    @if (cadastro.get('password')?.invalid && cadastro.get('password')?.dirty) {
+    <p class="erro-text">Insira uma senha válida!</p>
+    }
+  </div>
+  <div>
+    <input
+      [ngClass]="{
+        erro:
+          (cadastro.get('confPassword')?.invalid &&
+            cadastro.get('confPassword')?.dirty) ||
+          cardInfo == 'Invalid'
+      }"
+      type="password"
+      placeholder="Confirme sua Senha"
+      formControlName="confPassword"
+    />
+    @if ((cadastro.get('confPassword')?.invalid &&
+    cadastro.get('confPassword')?.dirty) || cardInfo == 'Invalid') {
+    <p class="erro-text">
+      {{
+        cardInfo == "Invalid"
+          ? "Sua senha tem que ser igual!"
+          : "Por favor, confirme sua senha!"
+      }}
+    </p>
+    }
+  </div>
+  <input type="submit" value="Start Save" [disabled]="cadastro.invalid" />
+</form>

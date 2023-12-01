@@ -1,0 +1,51 @@
+<main>
+  <h1>ps2 blog</h1>
+  <!--
+    Troca do formulários de login e cadastro.
+   -->
+  @if (cardForm) {
+  <app-form-login (info)="getInfoLogin($event)"></app-form-login>
+  <div>
+    <p>Esqueceu email ou senha: <span>recuperar save!</span></p>
+    <p>Não tem save game: <span (click)="toggleForm()">criar save!</span></p>
+  </div>
+  } @else {
+  <app-form-cadastro (info)="getInfoCad($event)"></app-form-cadastro>
+  <p>Tem save game: <span (click)="toggleForm()">carregar save!</span></p>
+  }
+  <!--
+    Cartões de informações vizuais.
+   -->
+  <!--
+    Cartao de informacao de erro.
+    -->
+  @if (cardInfoCad == 'Erro' || cardInfoLogin == 'loginErro') {
+  <div id="cardErro">
+    <img class="img-show" src="../../../assets/imgs/error.svg" alt="Error" />
+    <p>
+      @if (cardInfoCad == 'Erro') { Impossível criar o save, execute outra
+      tentativa! } @else { Erro ao carregar o save, tente novamente! }
+    </p>
+  </div>
+  <!--
+    Cartao de informacao de dados incorretos.
+   -->
+  } @else if (cardInfoCad == 'Invalid') {
+  <div id="cardInvalid">
+    <img src="../../../assets/imgs/invalid.svg" alt="Invalid" />
+    <p>Verifique se os dados estão corretos!</p>
+  </div>
+  <!--
+    Cartao de informacao de sucesso.
+   -->
+  } @else if (cardInfoCad == 'Succes' || cardInfoLogin == 'loginSucces') {
+  <div id="cardSucces">
+    <img src="../../../assets/imgs/Succes.svg" alt="Succes" />
+    <p>
+      @if (cardInfoCad == 'Succes') { Save criado com sucesso, inicie seu save!
+      } @else { Save carregado com sucesso, bom game! }
+    </p>
+  </div>
+  }
+</main>
+<app-footer></app-footer>

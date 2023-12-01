@@ -1,0 +1,16 @@
+@import "../../../scss/variaveis.scss";
+
+footer {
+  background: $tertiary-bg-color;
+
+  padding: 30px 0;
+
+  p {
+    color: #fff;
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+  }
+}
