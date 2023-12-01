@@ -1,5 +1,5 @@
 <?php
-include('../../index.php');
+include('../index.php');
 
 // Cabeçalho para tratar erros de CORS.
 header("Access-Control-Allow-Origin: https://ps2blog.netlify.app");
