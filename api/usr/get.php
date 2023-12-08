@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Se o email nao existir, retornar o erro e fechar a requisicao.
     if (!$result->num_rows > 0) {
-        die ('Email nao encontrado');
+        die('Email nao encontrado');
         $stmt->close();
     } else {
 
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Fechando a conexao.
     $stmt->close();
-} else {
+} elseif ($_SERVER["REQUEST_METHOD"] == "GET") {
 
     // Efetuando a consulta no banco de dados dos nomes de usuarios cadastrados.
     $result = $mysqli->query("SELECT usr FROM usr");
